@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="さくら行政書士事務所の建設業許可申請サービスと料金案内。新規許可110,000円〜、更新55,000円〜。明瞭な料金体系で安心。"/>
+<title>サービス・料金案内 | さくら行政書士事務所</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #f4f1ea; --bg2: #edeae2; --white: #faf9f6;
+  --ink: #131310; --navy: #152040; --gold: #b0884a; --gold-l: #d4b07a;
+  --muted: #6b6860; --rule: rgba(19,19,16,.12);
+  --serif: 'Noto Serif JP', Georgia, serif;
+  --sans: 'Noto Sans JP', 'Helvetica Neue', sans-serif;
+}
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-height: 1.7; overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+/* ─── HEADER ─── */
+header {
+  position: sticky; top: 0; z-index: 100;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+  padding: 0 clamp(1.5rem, 5vw, 5rem);
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.logo { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; letter-spacing: .06em; color: var(--navy); display: inline-flex; align-items: center; gap: 8px; }
+nav { display: flex; align-items: center; gap: 2.5rem; }
+nav a { font-size: .8rem; font-weight: 500; letter-spacing: .08em; color: var(--muted); transition: color .2s; }
+nav a:hover { color: var(--ink); }
+nav a.active { color: var(--navy); border-bottom: 1px solid var(--navy); padding-bottom: 1px; }
+.nav-tel { font-family: var(--serif); font-size: 1rem; font-weight: 500; color: var(--navy) !important; }
+.nav-cta { background: var(--navy); color: var(--white) !important; padding: .45rem 1.2rem; font-size: .75rem; letter-spacing: .1em; transition: background .2s !important; }
+.nav-cta:hover { background: var(--gold) !important; }
+.ham { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+.ham span { display: block; width: 22px; height: 1.5px; background: var(--ink); }
+.mobile-nav { display: none; position: fixed; inset: 0; z-index: 200; background: var(--bg); flex-direction: column; padding: 2rem clamp(1.5rem, 5vw, 3rem); }
+.mobile-nav.open { display: flex; }
+.mobile-nav-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; }
+.mobile-nav-close { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--ink); }
+.mobile-nav a { font-family: var(--serif); font-size: 1.5rem; font-weight: 400; padding: 1rem 0; border-bottom: 1px solid var(--rule); display: block; letter-spacing: .04em; }
+.mobile-cta-btn { margin-top: 2rem; background: var(--navy); color: var(--white); text-align: center; padding: 1rem; font-size: 1rem; letter-spacing: .08em; display: block; }
+
+/* ─── PAGE HERO ─── */
+.page-hero {
+  background: var(--navy);
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 5rem);
+}
+.page-hero-inner { max-width: 1160px; margin: 0 auto; }
+.page-hero-en { font-size: .72rem; letter-spacing: .25em; color: var(--gold-l); text-transform: uppercase; margin-bottom: .8rem; }
+.page-hero-title { font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 300; color: var(--white); letter-spacing: .04em; line-height: 1.4; }
+.page-hero-sub { font-size: .9rem; color: rgba(255,255,255,.55); margin-top: 1rem; max-width: 44ch; line-height: 1.8; }
+
+/* ─── LAYOUT ─── */
+.section { padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 5rem); }
+.section-inner { max-width: 1160px; margin: 0 auto; }
+.sec-head { display: flex; align-items: flex-end; gap: 2rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
+.sec-num { font-family: var(--serif); font-size: clamp(3rem, 5vw, 4rem); font-weight: 300; color: var(--rule); line-height: 1; flex-shrink: 0; letter-spacing: -.04em; }
+.sec-title-block { flex: 1; }
+.sec-en { font-size: .72rem; letter-spacing: .25em; color: var(--gold); text-transform: uppercase; margin-bottom: .4rem; }
+.sec-ja { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 400; color: var(--navy); letter-spacing: .04em; }
+.sec-line { flex: 1; height: 1px; background: var(--rule); margin-bottom: .6rem; max-width: 200px; }
+
+/* ─── REVEAL ─── */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .65s ease, transform .65s ease; }
+.reveal.in { opacity: 1; transform: none; }
+
+/* ─── PRICING TABLE ─── */
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+.price-table th {
+  font-size: .78rem;
+  letter-spacing: .12em;
+  color: var(--gold);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+.price-table td {
+  padding: 1.4rem 1.5rem;
+  font-size: .88rem;
+  vertical-align: top;
+  border-bottom: 1px solid var(--rule);
+}
+.price-table tr:last-child td { border-bottom: none; }
+.price-table tr:nth-child(even) td { background: var(--bg); }
+.price-table tr:hover td { background: color-mix(in srgb, var(--gold-l) 8%, transparent); }
+.price-name { font-family: var(--serif); font-weight: 500; color: var(--navy); font-size: .95rem; margin-bottom: .3rem; }
+.price-note { font-size: .78rem; color: var(--muted); margin-top: .2rem; }
+.price-amount { font-family: var(--serif); font-size: 1.4rem; font-weight: 300; color: var(--navy); white-space: nowrap; }
+.price-amount span { font-size: .7em; color: var(--muted); }
+.price-remark { font-size: .82rem; color: var(--muted); line-height: 1.7; }
+.table-note { font-size: .78rem; color: var(--muted); margin-top: 1rem; letter-spacing: .04em; }
+
+/* ─── FLOW ─── */
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5px;
+  background: var(--rule);
+}
+.flow-card {
+  background: var(--white);
+  padding: 2rem 1.5rem;
+  position: relative;
+}
+.flow-num {
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--bg2);
+  line-height: 1;
+  margin-bottom: 1rem;
+  letter-spacing: -.04em;
+}
+.flow-title { font-family: var(--serif); font-size: 1rem; font-weight: 500; color: var(--navy); margin-bottom: .6rem; }
+.flow-body { font-size: .82rem; color: var(--muted); line-height: 1.85; }
+.flow-connector {
+  position: absolute;
+  right: -12px; top: 50%;
+  transform: translateY(-50%);
+  width: 20px; height: 20px;
+  z-index: 2;
+  color: var(--gold);
+  font-size: .7rem;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+}
+
+/* ─── ANNUAL PLAN ─── */
+.plan-wrap {
+  background: var(--navy);
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 0;
+}
+.plan-left { padding: clamp(2rem, 4vw, 3.5rem); }
+.plan-tag {
+  display: inline-block;
+  font-size: .72rem; letter-spacing: .18em;
+  background: var(--gold); color: var(--white);
+  padding: .3rem .8rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.plan-title { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 300; color: var(--white); line-height: 1.5; margin-bottom: 1.2rem; }
+.plan-body { font-size: .88rem; color: rgba(255,255,255,.6); line-height: 1.9; margin-bottom: 2rem; max-width: 44ch; }
+.plan-chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.plan-chip { font-size: .78rem; letter-spacing: .06em; border: 1px solid rgba(255,255,255,.2); color: rgba(255,255,255,.8); padding: .35rem .9rem; }
+.plan-right {
+  background: var(--white);
+  padding: clamp(2rem, 3vw, 3rem);
+  display: flex; flex-direction: column;
+  justify-content: center;
+}
+.plan-price-sub { font-size: .78rem; letter-spacing: .1em; color: var(--muted); margin-bottom: .4rem; }
+.plan-price { font-family: var(--serif); font-size: 2.8rem; font-weight: 300; color: var(--navy); letter-spacing: -.02em; line-height: 1; margin-bottom: 1.5rem; }
+.plan-price span { font-size: .5em; color: var(--muted); }
+.plan-items { display: flex; flex-direction: column; gap: .8rem; margin-bottom: 2rem; }
+.plan-item { font-size: .82rem; color: var(--muted); display: flex; align-items: baseline; gap: .6rem; }
+.plan-item::before { content: ''; display: inline-block; width: 12px; height: 1px; background: var(--gold); flex-shrink: 0; position: relative; top: -2px; }
+.plan-cta {
+  display: block; text-align: center;
+  background: var(--navy); color: var(--white);
+  padding: .9rem;
+  font-size: .82rem; letter-spacing: .12em;
+  font-weight: 500;
+  transition: background .2s;
+}
+.plan-cta:hover { background: var(--gold); }
+
+/* ─── FAQ ─── */
+.faq-list { display: flex; flex-direction: column; gap: 1.5px; background: var(--rule); }
+.faq-item { background: var(--white); }
+.faq-toggle {
+  width: 100%; display: flex; align-items: center; justify-content: space-between;
+  padding: 1.4rem 1.8rem;
+  background: none; border: none; cursor: pointer;
+  text-align: left; gap: 1rem;
+}
+.faq-q { font-family: var(--serif); font-size: .95rem; color: var(--navy); font-weight: 400; }
+.faq-q-mark { font-family: var(--serif); font-size: 1.2rem; color: var(--gold); margin-right: .6rem; flex-shrink: 0; }
+.faq-icon { font-size: 1.2rem; color: var(--muted); flex-shrink: 0; transition: transform .3s; line-height: 1; }
+.faq-icon.open { transform: rotate(45deg); }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+.faq-answer-inner { padding: 0 1.8rem 1.4rem 1.8rem; padding-left: calc(1.8rem + 1.8rem); font-size: .88rem; color: var(--muted); line-height: 1.95; border-left: 2px solid var(--gold); margin-left: 1.8rem; }
+.faq-answer.open { max-height: 400px; }
+
+/* ─── CONTACT CTA ─── */
+.contact-cta {
+  background: var(--navy);
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 5rem);
+  text-align: center;
+}
+.cta-en { font-size: .75rem; letter-spacing: .2em; color: var(--gold-l); margin-bottom: 1rem; }
+.cta-title { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.5rem); font-weight: 300; color: var(--white); margin-bottom: 1rem; }
+.cta-sub { font-size: .85rem; color: rgba(255,255,255,.5); margin-bottom: 2.5rem; }
+.cta-btns { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+.cta-btn-ghost {
+  display: flex; align-items: center; gap: .8rem;
+  background: rgba(255,255,255,.08); color: var(--white);
+  padding: 1rem 2rem; font-size: .85rem; letter-spacing: .1em;
+  border: 1px solid rgba(255,255,255,.2);
+  transition: background .2s;
+}
+.cta-btn-ghost:hover { background: rgba(255,255,255,.15); }
+.cta-btn-gold {
+  display: flex; align-items: center; gap: .8rem;
+  background: var(--gold); color: var(--white);
+  padding: 1rem 2.5rem; font-size: .85rem; letter-spacing: .12em; font-weight: 500;
+  transition: background .2s;
+}
+.cta-btn-gold:hover { background: var(--gold-l); }
+
+/* ─── BACK LINK ─── */
+.back-link { display: inline-flex; align-items: center; gap: .6rem; font-size: .82rem; letter-spacing: .1em; color: rgba(255,255,255,.5); margin-bottom: 2rem; transition: color .2s; }
+.back-link:hover { color: var(--white); }
+.back-link::before { content: '←'; }
+
+/* ─── FLOATING CTA ─── */
+.float-cta { position: fixed; right: 1.5rem; bottom: 1.5rem; z-index: 60; display: flex; flex-direction: column; gap: .6rem; align-items: flex-end; transition: transform .35s ease, opacity .35s ease; }
+.float-cta.hidden { transform: translateY(120px); opacity: 0; pointer-events: none; }
+.float-btn { display: flex; align-items: center; gap: .7rem; padding: .7rem 1.2rem; font-size: .78rem; font-weight: 500; letter-spacing: .06em; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,.15); transition: transform .2s; }
+.float-btn:hover { transform: translateX(-3px); }
+.float-tel { background: var(--white); color: var(--navy); }
+.float-line { background: #06C755; color: var(--white); }
+.float-mail { background: var(--navy); color: var(--white); }
+.float-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+/* ─── FOOTER ─── */
+footer { background: var(--navy); color: rgba(255,255,255,.5); padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 5rem) 2rem; }
+.footer-inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 4rem; align-items: start; margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,.08); }
+.footer-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--white); margin-bottom: 1rem; letter-spacing: .06em; }
+.footer-info { font-size: .78rem; line-height: 1.8; }
+.footer-nav { display: flex; flex-direction: column; gap: .8rem; text-align: right; }
+.footer-nav a { font-size: .78rem; letter-spacing: .1em; color: rgba(255,255,255,.4); transition: color .2s; }
+.footer-nav a:hover { color: var(--white); }
+.footer-copy { max-width: 1160px; margin: 0 auto; font-size: .75rem; letter-spacing: .08em; }
+
+/* ─── BG ─── */
+.bg-bg { background: var(--bg); }
+.bg-white-s { background: var(--white); }
+
+@media (max-width: 900px) {
+  nav { display: none; }
+  .ham { display: flex; }
+  .flow-grid { grid-template-columns: 1fr 1fr; }
+  .plan-wrap { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-nav { text-align: left; }
+  .price-table th:last-child, .price-table td:last-child { display: none; }
+}
+@media (max-width: 540px) {
+  .flow-grid { grid-template-columns: 1fr; }
+  .flow-connector { display: none; }
+  .price-amount { font-size: 1.1rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo"><img src="favicon.svg" alt="" width="22" height="22"/>さくら行政書士事務所</a>
+  <nav>
+    <a href="index.html">トップ</a>
+    <a href="about.html">事務所概要・代表</a>
+    <a href="pricing.html" class="active">料金案内</a>
+    <a class="nav-tel" href="tel:048-000-0000">048-***-****</a>
+    <a class="nav-cta" href="index.html#contact">無料相談</a>
+  </nav>
+  <button class="ham" id="ham" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-header">
+    <span class="logo"><img src="favicon.svg" alt="" width="22" height="22"/>さくら行政書士事務所</span>
+    <button class="mobile-nav-close" id="mobileClose">✕</button>
+  </div>
+  <a href="index.html">トップページ</a>
+  <a href="about.html">事務所概要・代表プロフィール</a>
+  <a href="pricing.html">料金案内</a>
+  <a href="tel:048-000-0000">048-***-****</a>
+  <a class="mobile-cta-btn" href="index.html#contact">無料相談・お問い合わせ</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <a href="index.html" class="back-link">トップページに戻る</a>
+    <p class="page-hero-en">Service &amp; Pricing</p>
+    <h1 class="page-hero-title">サービス・料金案内</h1>
+    <p class="page-hero-sub">確実な許可取得から維持管理まで、明瞭な料金体系でお客様の事業をサポートします。</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- ─── 01 料金表 ─── -->
+  <section class="section bg-bg">
+    <div class="section-inner">
+      <div class="sec-head reveal">
+        <div class="sec-num">01</div>
+        <div class="sec-title-block">
+          <div class="sec-en">Pricing</div>
+          <h2 class="sec-ja">標準報酬額一覧</h2>
+        </div>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="reveal" style="overflow-x:auto;">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>手続内容</th>
+              <th>報酬額（税込）</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="price-name">新規許可申請</div>
+                <div class="price-note">初めて許可を取得する場合</div>
+              </td>
+              <td><div class="price-amount">110,000<span>円〜</span></div></td>
+              <td><div class="price-remark">知事・一般の場合。大臣許可は別途お見積り。</div></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="price-name">更新許可申請</div>
+                <div class="price-note">5年ごとの有効期限更新</div>
+              </td>
+              <td><div class="price-amount">55,000<span>円〜</span></div></td>
+              <td><div class="price-remark">変更事項がない場合の基本料金。</div></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="price-name">業種追加申請</div>
+                <div class="price-note">許可業種を追加する場合</div>
+              </td>
+              <td><div class="price-amount">44,000<span>円〜</span></div></td>
+              <td><div class="price-remark">他業種との同時申請で割引あり。</div></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="price-name">決算変更届</div>
+                <div class="price-note">毎年の事業年度終了届</div>
+              </td>
+              <td><div class="price-amount">33,000<span>円〜</span></div></td>
+              <td><div class="price-remark">決算後4ヶ月以内の届出が必要です。</div></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="price-name">経営事項審査</div>
+                <div class="price-note">公共工事入札参加に必要</div>
+              </td>
+              <td><div class="price-amount">88,000<span>円〜</span></div></td>
+              <td><div class="price-remark">点数シミュレーション込み。決算変更届と同時申請の場合は割引あり。</div></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">※ 表示価格は税込です。実費（登録免許税・証紙代等）は別途必要となります。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 02 申請の流れ ─── -->
+  <section class="section bg-white-s">
+    <div class="section-inner">
+      <div class="sec-head reveal">
+        <div class="sec-num">02</div>
+        <div class="sec-title-block">
+          <div class="sec-en">Process</div>
+          <h2 class="sec-ja">申請完了までの流れ</h2>
+        </div>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="flow-grid reveal">
+        <div class="flow-card">
+          <div class="flow-num">01</div>
+          <h3 class="flow-title">無料相談・要件診断</h3>
+          <p class="flow-body">お電話・メール・LINEにてご連絡ください。現在の状況をヒアリングし、許可要件を満たしているか無料で診断します。</p>
+          <div class="flow-connector">→</div>
+        </div>
+        <div class="flow-card">
+          <div class="flow-num">02</div>
+          <h3 class="flow-title">書類収集・作成</h3>
+          <p class="flow-body">必要書類のリストをご提供し、書類の収集をサポート。申請書類の作成はすべて当事務所が代行します。</p>
+          <div class="flow-connector">→</div>
+        </div>
+        <div class="flow-card">
+          <div class="flow-num">03</div>
+          <h3 class="flow-title">申請・審査対応</h3>
+          <p class="flow-body">役所への申請を代行します。審査期間は約1〜2ヶ月。追加書類の要請にも迅速に対応します。</p>
+          <div class="flow-connector">→</div>
+        </div>
+        <div class="flow-card">
+          <div class="flow-num">04</div>
+          <h3 class="flow-title">許可取得・継続管理</h3>
+          <p class="flow-body">許可証交付後も、更新・決算変更届の期限管理を継続的にサポート。うっかり失効を防ぎます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 03 年間サポートプラン ─── -->
+  <section class="section bg-bg">
+    <div class="section-inner">
+      <div class="sec-head reveal">
+        <div class="sec-num">03</div>
+        <div class="sec-title-block">
+          <div class="sec-en">Annual Plan</div>
+          <h2 class="sec-ja">年間サポートプラン</h2>
+        </div>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="plan-wrap reveal">
+        <div class="plan-left">
+          <div class="plan-tag">おすすめ</div>
+          <h3 class="plan-title">建設業許可の維持・管理を<br/>プロに一括お任せ</h3>
+          <p class="plan-body">許可取得はスタートライン。毎年の決算報告、5年ごとの更新、変更届の提出など、建設業許可の維持には継続的な管理が不可欠です。年間プランで期限切れのリスクをゼロに。</p>
+          <div class="plan-chips">
+            <span class="plan-chip">期限切れ防止</span>
+            <span class="plan-chip">優先相談対応</span>
+            <span class="plan-chip">書類保管代行</span>
+            <span class="plan-chip">法改正情報通知</span>
+          </div>
+        </div>
+        <div class="plan-right">
+          <div class="plan-price-sub">月額換算 5,500円〜</div>
+          <div class="plan-price">66,000<span>円 / 年〜</span></div>
+          <div class="plan-items">
+            <div class="plan-item">決算変更届（1期分）の作成・提出含む</div>
+            <div class="plan-item">更新時期の定期的通知</div>
+            <div class="plan-item">軽微な変更届の無料作成</div>
+          </div>
+          <a href="index.html#contact" class="plan-cta">プランの詳細を聞く</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 04 FAQ ─── -->
+  <section class="section bg-white-s">
+    <div class="section-inner">
+      <div class="sec-head reveal">
+        <div class="sec-num">04</div>
+        <div class="sec-title-block">
+          <div class="sec-en">FAQ</div>
+          <h2 class="sec-ja">よくあるご質問</h2>
+        </div>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span class="faq-q"><span class="faq-q-mark">Q.</span>建設業許可の更新手続きはいつから始めるべきですか？</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">有効期間満了の3ヶ月〜30日前（自治体により異なります）に申請が必要です。書類準備の期間を考えると、有効期限の半年前から動き始めるのが安全です。当事務所では期限管理もお任せいただけます。</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span class="faq-q"><span class="faq-q-mark">Q.</span>決算変更届を忘れてしまった場合、どうすればいいですか？</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">速やかに提出が必要です。未提出のまま更新申請を行うと受理されません。最悪の場合は許可取消・罰則の対象となります。当事務所では過去分の遡り提出もサポートしています。まずはご相談ください。</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span class="faq-q"><span class="faq-q-mark">Q.</span>個人事業主から法人化した場合、許可はどうなりますか？</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">個人から法人へ許可を引き継ぐことは原則できません。「法人成（ほうじんなり）」として新規許可申請が必要です。要件確認が複雑になるため、法人化前の早めのご相談をお勧めします。</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span class="faq-q"><span class="faq-q-mark">Q.</span>遠方でも対応してもらえますか？</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">はい、Zoomやクラウド電子署名を活用したフルリモート対応が可能です。来所不要で全国対応しております。まずはお電話・メール・LINEにてお問い合わせください。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT CTA ─── -->
+  <div class="contact-cta">
+    <p class="cta-en">Contact</p>
+    <h2 class="cta-title reveal">まずは無料でご相談ください</h2>
+    <p class="cta-sub reveal">お電話・メール・LINEにて24時間以内に返信します。</p>
+    <div class="cta-btns reveal">
+      <a href="tel:048-000-0000" class="cta-btn-ghost">電話で相談　048-***-****</a>
+      <a href="index.html#contact" class="cta-btn-gold">メールで問い合わせ →</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">さくら行政書士事務所</div>
+      <div class="footer-info">
+        〒330-0854 埼玉県さいたま市大宮区桜木町X-X-X<br/>
+        Email: info@sakura-gyosei.jp　／　Tel: 048-***-****
+      </div>
+    </div>
+    <nav class="footer-nav">
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+  </div>
+  <div class="footer-copy">© 2026 さくら行政書士事務所 All Rights Reserved.</div>
+</footer>
+
+<!-- FLOATING CTA -->
+<div class="float-cta" id="floatCta">
+  <a href="tel:048-000-0000" class="float-btn float-tel" style="width: 132px; height: 42px">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.1 21 3 12.9 3 5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+    電話相談
+  </a>
+  <a href="#" class="float-btn float-line" style="width: 132px; height: 42px">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+    LINE相談
+  </a>
+  <a href="about.html#contact" class="float-btn float-mail" style="width: 132px; height: 42px; line-height: 3; background-color: rgb(51, 60, 87)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+    メール相談
+  </a>
+</div>
+
+<script>
+const ham = document.getElementById('ham');
+const mobileNav = document.getElementById('mobileNav');
+const mobileClose = document.getElementById('mobileClose');
+ham.onclick = () => { mobileNav.classList.add('open'); ham.setAttribute('aria-expanded', 'true'); mobileClose.focus(); };
+mobileClose.onclick = () => { mobileNav.classList.remove('open'); ham.setAttribute('aria-expanded', 'false'); ham.focus(); };
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+    mobileNav.classList.remove('open'); ham.setAttribute('aria-expanded', 'false'); ham.focus();
+  }
+});
+mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mobileNav.classList.remove('open'); ham.setAttribute('aria-expanded', 'false'); }));
+
+// Reveal
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// FAQ
+document.querySelectorAll('.faq-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const ans = item.querySelector('.faq-answer');
+    const icon = item.querySelector('.faq-icon');
+    const isOpen = ans.classList.contains('open');
+    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-icon').forEach(i => { i.classList.remove('open'); i.textContent = '+'; });
+    if (!isOpen) { ans.classList.add('open'); icon.classList.add('open'); icon.textContent = '×'; }
+  });
+});
+
+// Float CTA
+const floatCta = document.getElementById('floatCta');
+floatCta.classList.add('hidden');
+let lastY = scrollY;
+window.addEventListener('scroll', () => {
+  const y = scrollY;
+  if (y < 300) { floatCta.classList.add('hidden'); }
+  else { floatCta.classList.toggle('hidden', y > lastY); }
+  lastY = y;
+}, { passive: true });
+</script>
+</body>
+</html>

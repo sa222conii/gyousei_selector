@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="さくら行政書士事務所ウェブサイトの利用規約。サービス内容・禁止事項・免責事項等について。"/>
+<title>利用規約 | さくら行政書士事務所</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #f4f1ea; --bg2: #edeae2; --white: #faf9f6;
+  --ink: #131310; --navy: #152040; --gold: #b0884a; --gold-l: #d4b07a;
+  --muted: #6b6860; --rule: rgba(19,19,16,.12);
+  --serif: 'Noto Serif JP', Georgia, serif;
+  --sans: 'Noto Sans JP', 'Helvetica Neue', sans-serif;
+}
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-height: 1.7; overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+/* ─── HEADER ─── */
+header {
+  position: sticky; top: 0; z-index: 100;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+  padding: 0 clamp(1.5rem, 5vw, 5rem);
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.logo { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; letter-spacing: .06em; color: var(--navy); }
+.logo span { display: inline-block; width: 6px; height: 6px; background: var(--gold); border-radius: 50%; margin-right: 10px; vertical-align: middle; position: relative; top: -1px; }
+nav { display: flex; align-items: center; gap: 2.5rem; }
+nav a { font-size: .8rem; font-weight: 500; letter-spacing: .08em; color: var(--muted); transition: color .2s; }
+nav a:hover { color: var(--ink); }
+.nav-tel { font-family: var(--serif); font-size: 1rem; font-weight: 500; color: var(--navy) !important; }
+.nav-cta { background: var(--navy); color: var(--white) !important; padding: .45rem 1.2rem; font-size: .75rem; letter-spacing: .1em; transition: background .2s !important; }
+.nav-cta:hover { background: var(--gold) !important; }
+.ham { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+.ham span { display: block; width: 22px; height: 1.5px; background: var(--ink); }
+.mobile-nav { display: none; position: fixed; inset: 0; z-index: 200; background: var(--bg); flex-direction: column; padding: 2rem clamp(1.5rem, 5vw, 3rem); }
+.mobile-nav.open { display: flex; }
+.mobile-nav-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; }
+.mobile-nav-close { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--ink); }
+.mobile-nav a { font-family: var(--serif); font-size: 1.5rem; font-weight: 400; padding: 1rem 0; border-bottom: 1px solid var(--rule); display: block; letter-spacing: .04em; }
+.mobile-cta-btn { margin-top: 2rem; background: var(--navy); color: var(--white); text-align: center; padding: 1rem; font-size: 1rem; letter-spacing: .08em; }
+
+/* ─── PAGE HERO ─── */
+.page-hero {
+  background: var(--navy);
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 5rem);
+}
+.page-hero-inner { max-width: 800px; margin: 0 auto; }
+.page-hero-en { font-size: .65rem; letter-spacing: .25em; color: var(--gold-l); text-transform: uppercase; margin-bottom: .8rem; }
+.page-hero-title { font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 300; color: var(--white); letter-spacing: .04em; line-height: 1.4; }
+
+/* ─── ARTICLE ─── */
+.article-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 5rem);
+}
+.article-section { margin-bottom: 3rem; opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+.article-section.in { opacity: 1; transform: none; }
+.article-num { font-family: var(--serif); font-size: .65rem; letter-spacing: .2em; color: var(--gold); text-transform: uppercase; margin-bottom: .5rem; }
+.article-h2 { font-family: var(--serif); font-size: 1.1rem; font-weight: 500; color: var(--navy); letter-spacing: .04em; margin-bottom: 1rem; padding-bottom: .6rem; border-bottom: 1px solid var(--rule); }
+.article-body { font-size: .9rem; color: var(--muted); line-height: 1.95; }
+.article-list { margin-top: .8rem; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+.article-list li { font-size: .88rem; color: var(--muted); display: flex; align-items: baseline; gap: .6rem; }
+.article-list li::before { content: ''; display: inline-block; width: 12px; height: 1px; background: var(--gold); flex-shrink: 0; position: relative; top: -3px; }
+.article-date { font-size: .75rem; color: var(--muted); letter-spacing: .08em; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
+.back-link { display: inline-flex; align-items: center; gap: .6rem; font-size: .78rem; letter-spacing: .1em; color: var(--navy); margin-bottom: 3rem; transition: gap .2s; }
+.back-link:hover { gap: 1rem; color: var(--gold); }
+.back-link::before { content: '←'; }
+
+/* ─── FOOTER ─── */
+footer { background: var(--navy); color: rgba(255,255,255,.5); padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 5rem) 2rem; }
+.footer-inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 4rem; align-items: start; margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,.08); }
+.footer-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--white); margin-bottom: 1rem; letter-spacing: .06em; }
+.footer-info { font-size: .78rem; line-height: 1.8; }
+.footer-nav { display: flex; flex-direction: column; gap: .8rem; text-align: right; }
+.footer-nav a { font-size: .75rem; letter-spacing: .1em; color: rgba(255,255,255,.4); transition: color .2s; }
+.footer-nav a:hover { color: var(--white); }
+.footer-copy { max-width: 1160px; margin: 0 auto; font-size: .7rem; letter-spacing: .08em; }
+
+@media (max-width: 900px) {
+  nav { display: none; }
+  .ham { display: flex; }
+  .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-nav { text-align: left; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo"><span></span>さくら行政書士事務所</a>
+  <nav>
+    <a href="index.html">トップ</a>
+    <a href="index.html#strengths">強み</a>
+    <a href="index.html#services">サービス</a>
+    <a href="index.html#profile">代表</a>
+    <a class="nav-tel" href="tel:048-000-0000">048-***-****</a>
+    <a class="nav-cta" href="index.html#contact">無料相談</a>
+  </nav>
+  <button class="ham" id="ham" aria-label="メニュー"><span></span><span></span><span></span></button>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-header">
+    <span class="logo"><span></span>さくら行政書士事務所</span>
+    <button class="mobile-nav-close" id="mobileClose">✕</button>
+  </div>
+  <a href="index.html">トップページ</a>
+  <a href="index.html#strengths">事務所の強み</a>
+  <a href="index.html#services">サービス・料金</a>
+  <a href="index.html#profile">代表プロフィール</a>
+  <a href="tel:048-000-0000">048-***-****</a>
+  <a class="mobile-cta-btn" href="index.html#contact">無料相談・お問い合わせ</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="page-hero-en">Terms of Use</p>
+    <h1 class="page-hero-title">利用規約</h1>
+  </div>
+</div>
+
+<main>
+  <div class="article-wrap">
+    <a href="index.html" class="back-link">トップページに戻る</a>
+
+    <div class="article-section">
+      <p class="article-num">Article 01</p>
+      <h2 class="article-h2">本規約の適用</h2>
+      <p class="article-body">本利用規約（以下「本規約」）は、さくら行政書士事務所（以下「当事務所」）が運営するウェブサイト（以下「本サイト」）の利用に関する条件を定めるものです。本サイトをご利用いただくことで、本規約に同意されたものとみなします。</p>
+    </div>
+
+    <div class="article-section">
+      <p class="article-num">Article 02</p>
+      <h2 class="article-h2">サービス内容</h2>
+      <p class="article-body">本サイトは、建設業許可申請・経営事項審査等の行政書士業務に関する情報提供およびお問い合わせの受付を目的としています。掲載情報は予告なく変更・削除する場合があります。</p>
+    </div>
+
+    <div class="article-section">
+      <p class="article-num">Article 03</p>
+      <h2 class="article-h2">禁止事項</h2>
+      <p class="article-body">本サイトの利用にあたり、以下の行為を禁止します。</p>
+      <ul class="article-list">
+        <li>法令または公序良俗に違反する行為</li>
+        <li>当事務所または第三者の権利・利益を侵害する行為</li>
+        <li>本サイトの運営を妨害する行為</li>
+        <li>不正アクセス等のコンピューターへの不正行為</li>
+      </ul>
+    </div>
+
+    <div class="article-section">
+      <p class="article-num">Article 04</p>
+      <h2 class="article-h2">免責事項</h2>
+      <p class="article-body">本サイトに掲載する情報の正確性・完全性について万全を期しておりますが、当事務所は本サイトの情報利用による損害について、一切の責任を負いません。また、本サイトからリンクする外部サイトの内容については関知しません。</p>
+    </div>
+
+    <div class="article-section">
+      <p class="article-num">Article 05</p>
+      <h2 class="article-h2">知的財産権</h2>
+      <p class="article-body">本サイトに掲載されているコンテンツ（文章・画像・デザイン等）の著作権は当事務所に帰属します。無断転載・複製等を禁じます。</p>
+    </div>
+
+    <div class="article-section">
+      <p class="article-num">Article 06</p>
+      <h2 class="article-h2">規約の変更</h2>
+      <p class="article-body">当事務所は、必要に応じて本規約を変更することがあります。変更後の規約は本サイトに掲載した時点から効力を生じるものとします。</p>
+    </div>
+
+    <div class="article-section">
+      <p class="article-num">Article 07</p>
+      <h2 class="article-h2">準拠法・管轄</h2>
+      <p class="article-body">本規約の解釈は日本法に準拠します。本サイトに関する紛争については、さいたま地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
+    </div>
+
+    <p class="article-date">制定日：2026年4月1日</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">さくら行政書士事務所</div>
+      <div class="footer-info">
+        〒330-0854 埼玉県さいたま市大宮区桜木町X-X-X<br/>
+        Email: info@sakura-gyosei.jp　／　Tel: 048-***-****
+      </div>
+    </div>
+    <nav class="footer-nav">
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+  </div>
+  <div class="footer-copy">© 2026 さくら行政書士事務所 All Rights Reserved.</div>
+</footer>
+
+<script>
+document.getElementById('ham').onclick = () => document.getElementById('mobileNav').classList.add('open');
+document.getElementById('mobileClose').onclick = () => document.getElementById('mobileNav').classList.remove('open');
+
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.article-section').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
